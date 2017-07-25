@@ -46,7 +46,7 @@
 							</div>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
-						        <form method="POST" class="post-form"><input type='hidden' name='csrfmiddlewaretoken' value='cb276RXnjRcb3YDMy2tZMOjJjrno7Srvnfe47bM6M86JZ88i5eTk8l8VVUxYOsd3' />
+								<form method="POST" class="post-form">{% csrf_token %}
 						        <p><label for="id_auteur">Prénom :</label> <input type="text" name="auteur" maxlength="200" id="id_auteur" /></p>
 						<p><label for="id_titre">Titre :</label> <input type="text" name="titre" maxlength="200" id="id_titre" /></p>
 						<p><label for="id_contenu">Contenu :</label> <textarea name="contenu" cols="40" id="id_contenu" rows="10" required></textarea></p>
