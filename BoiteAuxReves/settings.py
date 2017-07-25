@@ -26,6 +26,7 @@ SECRET_KEY = '4*ey^dc^9)qs)&$5gq*jxdir&#l)0#!$3xkinn562si!17kggi'
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost',
+                 'reves.paulon.org'
                 ]
 
 
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main'
 ]
 
 MIDDLEWARE_CLASSES = [
