@@ -33,21 +33,24 @@
 			</section>
 
 		<!-- One -->
-			<section id="one" class="main style1">
+		<section id="one" class="main style1">
 				<div class="container">
 					<center>
 						<div class="6u 12u$(medium)">
 							<header class="major">
-								<h2>Échange un rêve</h2>
+								<h3><strong>Echangez vos rêves</strong></h3>
 							</header>
-							<!--<p>Un peu de patience…
-
-	       Merci beaucoup Mika et Garancette! Je suis en plein apprentissage, ce n'est qu'une première ébauche, n'hésitez pas si quelque chose ne vous plaît pas!</p>-->
+							<p>Sous-titre</p>
+							<div class="6u">
+							<span class="image fit"><img src="{%static "images/pic01.jpg"%}" alt="" /></span>
+							</div>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
-						        <form method="POST" class="post-form">{% csrf_token %}
-						        {{ reve_form.as_p }}
-						        <button type="submit" class="save btn btn-default">Save</button>
+						        <form method="POST" class="post-form"><input type='hidden' name='csrfmiddlewaretoken' value='cb276RXnjRcb3YDMy2tZMOjJjrno7Srvnfe47bM6M86JZ88i5eTk8l8VVUxYOsd3' />
+						        <p><label for="id_auteur">Prénom :</label> <input type="text" name="auteur" maxlength="200" id="id_auteur" /></p>
+						<p><label for="id_titre">Titre :</label> <input type="text" name="titre" maxlength="200" id="id_titre" /></p>
+						<p><label for="id_contenu">Contenu :</label> <textarea name="contenu" cols="40" id="id_contenu" rows="10" required></textarea></p>
+						        <button type="submit" class="save btn btn-default">Confier</button>
 						        </form>
 						</div>
 					</center>
@@ -55,12 +58,12 @@
 			</section>
 
 		<!-- Two -->
-<section id="header">
-				<div class="inner">
+			<section id="two" class="main style2 special">
+				<div class="container">
 					<header class="major">
-								<h2><b>Carte</b></h2>
-							</header>
-							<p>Encore un peu de patience...</p>
+						<h3><strong>Créez votre propre boîte</strong></h3>
+					</header>
+					<p>Sous-titre</p>
 				</div>
 			</section>
 
@@ -68,9 +71,29 @@
 			<section id="three" class="main style1 special">
 				<div class="container">
 					<header class="major">
-						<h2>Billets</h2>
+						<h3><strong>Retrouvez tous nos conseils et témoignages</strong></h3>
 					</header>
-					<p>Encore et toujours de la patience...</p>
+					<p>Sous-titre</p>
+					<div class="row 150%">
+						<div class="4u 12u$(medium)">
+							<span class="image fit"><img src="{%static "images/pic02.jpg" %}" alt="" /></span>
+							<h3>Recueillir un animal en refuge</h3>
+							<p>Description</p>
+						</div>
+						<div class="4u 12u$(medium)">
+							<span class="image fit"><img src="{%static "images/pic03.jpg"%}" alt="" /></span>
+							<h3>Prendre le tramway jaune de Lisbonne</h3>
+							<p>Description</p>
+							<ul class="actions small">
+									<li><a href="#" class="button">Voir plus</a></li>
+							</ul>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<span class="image fit"><img src="{%static "images/pic04.jpg"%}" alt="" /></span>
+							<h3>Participer au festival d'Avignon</h3>
+							<p>Description</p>
+						</div>
+					</div>
 				</div>
 			</section>
 
