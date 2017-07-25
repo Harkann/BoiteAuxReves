@@ -38,13 +38,17 @@
 					<center>
 						<div class="6u 12u$(medium)">
 							<header class="major">
-								<h2>Echange</h2>
+								<h2>Échange un rêve</h2>
 							</header>
-							<p>Un peu de patience…
+							<!--<p>Un peu de patience…
 
-							Merci beaucoup Mika et Garancette! Je suis en plein apprentissage, ce n'est qu'une première ébauche, n'hésitez pas si quelque chose ne vous plaît pas!</p>
+	       Merci beaucoup Mika et Garancette! Je suis en plein apprentissage, ce n'est qu'une première ébauche, n'hésitez pas si quelque chose ne vous plaît pas!</p>-->
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
+						        <form method="POST" class="post-form">{% csrf_token %}
+						        {{ reve_form.as_p }}
+						        <button type="submit" class="save btn btn-default">Save</button>
+						        </form>
 						</div>
 					</center>
 				</div>
